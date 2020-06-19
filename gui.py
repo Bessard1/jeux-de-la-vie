@@ -25,7 +25,7 @@ class Gui(threading.Thread):
                 self.grid[row].append(0)  # Append a cell
 
     def updateCell(self,x,y,valeur):
-        self.grid[x-1][y-1]=valeur
+        self.grid[x][y]=valeur
 
     def run(self):
         # Initialize pygame
